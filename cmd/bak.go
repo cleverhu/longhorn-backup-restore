@@ -198,6 +198,7 @@ backuploop:
 func writeObject(o metav1.Object, writer *os.File) error {
 	o.SetManagedFields(nil)
 	o.SetResourceVersion("")
+	o.SetUID("")
 	b, _ := json.Marshal(o)
 	bytes, _ := yaml.JSONToYAML(b)
 	_, err := writer.Write(bytes)

@@ -2,3 +2,4 @@ kubeconfig
 bak-kubeconfig
 recovery-kubeconfig
 resources.yaml
+.idea
